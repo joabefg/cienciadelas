@@ -1,0 +1,10 @@
+#footer-bar {
+  background-color: var(--cor-header-footer) !important;
+  color: var(--cor-texto-header);
+  font-family: var(--fonte-titulo);
+
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  width: 100%;
+}

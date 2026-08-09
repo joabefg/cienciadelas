@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Alagard';
+  src: url('../fonts/alagard.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --cor-primaria: #4464A5;
+  --cor-secundaria: #FFF8F8;
+  --cor-terciaria: #FFF8F8;
+  --fonte-titulo: 'Alagard', sans-serif;
+  --espacamento-padrao: 1.5rem;
+  --cor-header-footer: #4464A5;
+  --cor-fundo-corpo: #FFF8F8;
+  --cor-texto-header: #FFFFFF;
+}
+
+body {
+  background-color: var(--cor-fundo-corpo);
+  padding-top: 70px;   
+  padding-bottom: 60px; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fonte-titulo);
+}
