@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "pergunta": "O que é o Ciência Delas?",
+    "resposta": "Ciência Delas é um jogo de cartas cooperativo em que dois jogadores trabalham juntos para enfrentar uma ameaça global. Inspirado na importância das mulheres na ciência, o jogo combina estratégia, gerenciamento de recursos e tomada de decisões."
+  },
+  {
+    "id": 1,
+    "pergunta": "Quem são as personagens jogáveis?",
+    "resposta": "Você poderá jogar com duas cientistas inspiradas em mulheres que marcaram a história da ciência:\n- Marie Curie\n- Jaqueline Goes de Jesus\nCada uma possui habilidades e cartas exclusivas."
+  },
+  {
+    "id": 2,
+    "pergunta": "Como funciona a cooperação?",
+    "resposta": "Os jogadores compartilham recursos como Saúde, Infraestrutura e Pesquisa, precisando planejar suas ações em conjunto para superar os desafios da ameaça."
+  },
+  {
+    "id": 3,
+    "pergunta": "Por que o jogo se chama Ciência Delas?",
+    "resposta": "Porque busca destacar o protagonismo feminino na ciência por meio de uma experiência educativa e estratégica baseada em cientistas que marcaram a história e a ciência contemporânea."
+  }
+]
