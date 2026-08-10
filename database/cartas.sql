@@ -1,0 +1,13 @@
+USE cienciadelas;
+
+  CREATE TABLE IF NOT EXISTS cartas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    categoria VARCHAR(67) NOT NULL,
+    personagem VARCHAR(100) NOT NULL,
+    nome VARCHAR (100) NOT NULL,
+    custo DECIMAL (10,2) NOT NULL,
+    efeito VARCHAR (200) NOT NULL,
+    requisito VARCHAR (100) NOT NULL,
+    falha VARCHAR (100) NOT NULL,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
