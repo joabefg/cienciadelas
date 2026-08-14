@@ -1,0 +1,95 @@
+.btn-jogue {
+  position: fixed;
+  top: 70%;
+  left: 1100px;
+  transform: translateY(-50%);
+}
+
+.btn-jogue a {
+  display: block;
+  width: 350px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 28px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  background-color: var(--cor-secundaria);
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.btn-jogue a span {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-jogue a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--cor-primaria);
+  transition: all .35s;
+}
+
+.btn-jogue a:hover {
+  color: #fff;
+}
+
+.btn-jogue a:hover:after {
+  width: 100%;
+}
+
+.btn-wishlist {
+  position: fixed;
+  top: 70%;
+  left: 1500px;
+  transform: translateY(-50%);
+}
+
+.btn-wishlist a {
+  display: block;
+  width: 350px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 28px;
+  font-family: sans-serif;
+  text-decoration: none;
+  background-color: var(--cor-secundaria);
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.btn-wishlist a span {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-wishlist a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--cor-primaria);
+  transition: all .35s;
+}
+
+.btn-wishlist a:hover {
+  color: #fff;
+}
+
+.btn-wishlist a:hover:after {
+  width: 100%;
+}
