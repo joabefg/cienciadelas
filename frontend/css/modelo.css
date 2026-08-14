@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Alagard';
+  src: url('../fonts/alagard.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+main {
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.video-container {
+  width: 900px;
+  max-width: 900px;
+  height: 506px;
+  position: relative;
+  left: -15%;
+  top: 1px;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+}
