@@ -1,5 +1,5 @@
 .btn-jogue {
-  position: fixed;
+  position: absolute;
   top: 70%;
   left: 1100px;
   transform: translateY(-50%);
@@ -47,7 +47,7 @@
 }
 
 .btn-wishlist {
-  position: fixed;
+  position: absolute;
   top: 70%;
   left: 1500px;
   transform: translateY(-50%);

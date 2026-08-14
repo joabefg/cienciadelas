@@ -1,5 +1,5 @@
 .header-navbar {
-  background-color: var(--cor-header-footer) !important;
+  background:  linear-gradient(to right, var(--cor-degrade-esquerda),var(--cor-degrade-direita)) !important;
   color: var(--cor-texto-header);
   font-family: var(--fonte-titulo);
 
@@ -10,16 +10,78 @@
 }
 
 .header-navbar .nav-link,
-.navbar .navbar-brand {
+.navbar  {
   color: var(--cor-texto-header) !important;
+  /*border-radius: 15px;*/
 }
 
-.nav-link {
-     background-color: var(--cor-primaria);
-     padding: 5px;
-     margin: 5px;
+ .navbar-collapse{
+ position: relative; left: 80px;
 }
+
+.nav-item{
+  position: relative; left: 165px;
+  width: 150px;  /* nova largura */
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+  }
+.nav-link {
+  background-color: var(--cor-primaria);
+  border-radius: 15px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.nav-jogar{
+  position: relative; left: 180px; top:7px;
+  width: 150px;  /* nova largura */
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  margin-left: 8px;
+  font-size: 45px;
+  color: var(--cor-texto-header) !important;
+  text-decoration: none;
+}
+
+
+.nav-item-jogar{
+  font-size: 25px;
+  margin-top: px;
+}
+
+
 
 .header-navbar .nav-link:hover {
   color: rgba(255, 255, 255, 0.75) !important;
 }
+
+.fig-item{
+
+  margin-top: 9px;
+  justify-content: left;
+  position: relative; left: 165px; top: 10px;
+}
+.discord-img{
+  margin-top: -9px;
+  position: relative; left: 0px;
+}
+.insta-img{
+  position: relative; left: 10px;
+}
+.wtt-img{
+  position: relative; left: -1px;
+}
+.nav-logo{
+  position: relative; left: -250px; 
+}
+
+.navbar-brand{
+  color: var(--cor-primaria) !important;
+  font-size: 40px;
+  position: relative; left: -225px;
+}
+
+  
