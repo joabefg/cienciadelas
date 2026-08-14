@@ -1,6 +1,4 @@
-Claro. Vou deixar **tudo em um único `README.md`** e remover a parte de **estrutura planejada**.
-
-````markdown
+````
 # 🎮 Sistema de Ranking — Banco de Dados
 
 Banco de dados responsável pelo armazenamento das partidas e informações necessárias para o sistema de ranking do jogo.
