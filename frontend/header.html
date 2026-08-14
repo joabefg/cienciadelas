@@ -1,20 +1,141 @@
-<head>
-  <link rel="stylesheet" href="css/header.css">
-</head>
-<nav class="navbar navbar-expand-lg bg-transparent header-navbar">
-     <div class="container">
-          <a class="navbar-brand" href="index.html">Ciência Delas (provisório)</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-               <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navMenu">
-               <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="home.html">Início</a></li>
-                    <li class="nav-item"><a class="nav-link">|</a></li>
-                    <li class="nav-item"><a class="nav-link" href="modelo.html">Modelo</a></li>
-                    <li class="nav-item"><a class="nav-link">|</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
-               </ul>
-          </div>
-     </div>
-</nav>
+<main class="container my-4 backend-ranking-page">
+    <!-- Linha de Título Superior (opcional, baseada no topo da imagem) -->
+    <div class="text-uppercase small text-muted mb-2 tracking-wider">Ranking Principal</div>
+
+    <!-- NAVBAR INTERNA (Simulando o topo azul da imagem) -->
+    <nav class="navbar navbar-expand-lg game-navbar px-3 py-2 mb-4">
+        <div class="container-fluid p-0">
+            <span class="navbar-brand text-wrap game-brand text-uppercase">Ciência<br>Delas</span>
+            <div class="d-flex gap-2 flex-wrap justify-content-end header-buttons">
+                <button class="btn btn-game-sm">Avaliação</button>
+                <button class="btn btn-game-sm">Cientistas</button>
+                <button class="btn btn-game-sm">Catálogo</button>
+                <button class="btn btn-game-sm">Regras</button>
+                <button class="btn btn-game-sm">Equipe</button>
+                <button class="btn btn-game-sm">Buscar</button>
+                <span class="text-white align-self-center ms-2 font-pixel">in</span>
+            </div>
+        </div>
+    </nav>
+
+   <!-- ÁREA DO CONTEÚDO PRINCIPAL (HERO) - TOTALMENTE ALINHADO E CENTRALIZADO -->
+    <div class="row justify-content-center my-4">
+        <div class="col-12 d-flex flex-column align-items-center text-center">
+            
+            <!-- Título Principal com o Ícone -->
+            <h1 class="game-title mb-4 d-inline-flex align-items-center justify-content-center gap-2 m-0">
+                Ranking
+                <!-- Ícone do Frasco de Ciência em formato SVG Retrô -->
+                <svg width="34" height="42" viewBox="0 0 42 50" style="transform: rotate(15deg); min-width: 34px;">
+                    <path d="M14 0 h14 v6 h-14 z M16 6 h10 v12 h-10 z M4 18 h34 v6 h-34 z M0 24 h42 v22 h-42 z M4 46 h34 v4 h-34 z" fill="#1a1a1a"/>
+                    <rect x="4" y="24" width="34" height="22" fill="#81ee3e"/>
+                    <rect x="8" y="20" width="26" height="4" fill="#adff2f"/>
+                    <rect x="28" y="26" width="6" height="14" fill="#ffffff" opacity="0.6"/>
+                </svg>
+            </h1>
+            
+            <!-- Banner Cinza (Largura controlada via max-width para casar com o design) -->
+            <div class="hero-banner-box p-4 mb-5 w-100" style="max-width: 680px;">
+                <h2 class="text-uppercase m-0 banner-text" style="letter-spacing: 1px; font-size: 1.15rem; line-height: 1.5;">
+                    Veja quem são os melhores cientistas!
+                </h2>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- TABELA DE RANKING -->
+    <div class="ranking-card-container p-4 mx-auto" style="max-width: 800px;">
+        <!-- Cabeçalho da Tabela -->
+        <div class="row text-center fw-bold text-uppercase font-pixel mb-3 table-header-labels">
+            <div class="col-6 text-start ps-5"></div>
+            <div class="col-3">Nível</div>
+            <div class="col-3">Pontuação</div>
+        </div>
+
+        <!-- Lista de Jogadores -->
+        <div class="d-flex flex-column gap-3">
+            <!-- JOGADOR 1 -->
+            <div class="row align-items-center ranking-row py-2 px-3">
+                <div class="col-6 d-flex align-items-center gap-3">
+                    <span class="badge-rank rank-1">1</span>
+                    <span class="player-name">Jogador 1</span>
+                </div>
+                <div class="col-3 text-center player-stats">20</div>
+                <div class="col-3 text-center player-stats d-flex align-items-center justify-content-center gap-2">
+                    <span>1298</span> <span class="item-icon">🧪</span>
+                </div>
+            </div>
+
+            <!-- JOGADOR 2 -->
+            <div class="row align-items-center ranking-row py-2 px-3">
+                <div class="col-6 d-flex align-items-center gap-3">
+                    <span class="badge-rank rank-2">2</span>
+                    <span class="player-name">Jogador 2</span>
+                </div>
+                <div class="col-3 text-center player-stats">18</div>
+                <div class="col-3 text-center player-stats d-flex align-items-center justify-content-center gap-2">
+                    <span>1148</span> <span class="item-icon">🔬</span>
+                </div>
+            </div>
+
+            <!-- JOGADOR 3 -->
+            <div class="row align-items-center ranking-row py-2 px-3">
+                <div class="col-6 d-flex align-items-center gap-3">
+                    <span class="badge-rank rank-3">3</span>
+                    <span class="player-name">Jogador 3</span>
+                </div>
+                <div class="col-3 text-center player-stats">15</div>
+                <div class="col-3 text-center player-stats d-flex align-items-center justify-content-center gap-2">
+                    <span>867</span> <span class="item-icon">🦠</span>
+                </div>
+            </div>
+
+            <!-- JOGADOR 4 -->
+            <div class="row align-items-center ranking-row py-2 px-3">
+                <div class="col-6 d-flex align-items-center gap-3">
+                    <span class="badge-rank">4</span>
+                    <span class="player-name">Jogador 4</span>
+                </div>
+                <div class="col-3 text-center player-stats">12</div>
+                <div class="col-3 text-center player-stats d-flex align-items-center justify-content-center gap-2">
+                    <span>789</span> <span class="item-icon">🧬</span>
+                </div>
+            </div>
+
+            <!-- JOGADOR 5 -->
+            <div class="row align-items-center ranking-row py-2 px-3">
+                <div class="col-6 d-flex align-items-center gap-3">
+                    <span class="badge-rank">5</span>
+                    <span class="player-name">Jogador 5</span>
+                </div>
+                <div class="col-3 text-center player-stats">9</div>
+                <div class="col-3 text-center player-stats d-flex align-items-center justify-content-center gap-2">
+                    <span>618</span> <span class="item-icon">⚗️</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RODAPÉ DA SEÇÃO (Balão de fala e Mascote Inferior) -->
+    <div class="row align-items-center mt-5 justify-content-center">
+        <div class="col-md-3 text-center mb-3 mb-md-0">
+            <div class="item-icon display-4 drop-shadow-pixel"></div>
+        </div>
+        <div class="col-md-5 mb-3 mb-md-0 text-center text-md-start">
+            <div class="pixel-speech-bubble p-3">
+                Continue estudando e suba no ranking!
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="mascot-placeholder character-2"></div>
+        </div>
+    </div>
+
+    <!-- Faixa SENAI Inferior -->
+    <div class="row mt-4">
+        <div class="col-12 text-end bg-blue-footer py-2 px-4 text-white font-pixel italic-text">
+            SENAI
+        </div>
+    </div>
+</main>
