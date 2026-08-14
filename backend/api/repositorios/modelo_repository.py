@@ -1,4 +1,4 @@
-from config_db import conectar
+from config import conectar
 # ==========================================
 # VERSÃO TEMPORÁRIA
 # Troque o conteúdo deste arquivo quando o
