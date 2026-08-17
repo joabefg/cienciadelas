@@ -1,26 +1,24 @@
-from flask import Blueprint, request, jsonify
 from config import conectar
 
+dados = []
+_proximo_id = 1
 
-personagens_bp = Blueprint("personagens_bp", __name__)
+def listar_todos ():
+    return _dados
 
-@personagens_bp.route("/api/v1/personagens", methods = ["GET"])
-def listar_personagens():
-
-    conexao = conectar()
-    if not conexao :
-        return jsonify({"erro": "Falha na conexão com banco "}), 500
-    
+def listar_personagens(id):
+    """
     cursor = conexao.cursor(dictionary = True)
     cursor.execute("SELECT * FROM personagens")
     resultado = cursor.fetchall()
     cursor.close()
     conexao.close()
-
     return jsonify(resultado) , 200 
+    """
+    return next((item for item in _dados if item ["id"] == id),None)
 
-@personagens_bp.route("/api/v1/personagens/<int:id>", methods=["GET"])
 def buscar_personagens(id):
+    """
     conexao = conectar()
     
     if not conexao :
@@ -36,9 +34,11 @@ def buscar_personagens(id):
         return jsonify({"erro": "Não encontrado"}), 404
 
     return jsonify(resultado), 200
-@personagens_bp.route("/api/v1/personagens", methods=["POST"])
-def criar_personagens():
-    dados = request.get_json()
+    """
+
+def criar_personagens(id,atributo):
+"""
+ dados = request.get_json()
 
     campos_obrigatorios = ["nome_personagem", "descricao_personagem", "biografia_personagem"]
     faltando = [c for c in campos_obrigatorios if c not in (dados or {})]
@@ -66,10 +66,10 @@ def criar_personagens():
 
     cursor = conexao.cursor()
     cursor.execute(
-        """
+        
         INSERT INTO personagens (Nome_personagem, Descricao_personagem, Biografia_personagem)
         VALUES (%s, %s, %s)
-        """,
+        ,
         (
             dados["nome_personagem"],
             dados["descricao_personagem"],
@@ -83,15 +83,20 @@ def criar_personagens():
 
     return jsonify({
         "id": novo_id,
-        "nome_personagens": dados["nome_personagens"],
-        "descricao_personagens": dados["descricao_personagens"],
-        "biografia_personagens": dados["biografia_personagens"],
+        "nome_personagem": dados["nome_personagem"],
+        "descricao_personagem": dados["descricao_personagem"],
+        "biografia_personagem": dados["biografia_personagem"],
     }), 201
+"""
+   global _proximo_id
+    novo = {"id": _proximo_id, "atributo": "nome_personagens","biografia_personagens", "descrição_personagens"}
+    _dados.append(novo)
+    _proximo_id += 1
+    return novo
 
-
-@personagens_bp.route("/api/v1/personagens/<int:id>", methods=["PUT"])
-def atualizar_personagem(id):
-    dados = request.get_json()
+def  atualizar_personagem(id): 
+    """
+     dados = request.get_json()
 
     campos_obrigatorios = ["nome_personagem", "descricao_personagem", "biografia_personagem"]
     faltando = [c for c in campos_obrigatorios if c not in (dados or {})]
@@ -119,11 +124,11 @@ def atualizar_personagem(id):
 
     cursor = conexao.cursor()
     cursor.execute(
-        """
+        
         UPDATE personagens
         SET Nome_personagem = %s, Descricao_personagem = %s, Biografia_personagem = %s
         WHERE id = %s
-        """,
+        ,
         (
             dados["nome_personagem"],
             dados["descricao_personagem"],
@@ -145,3 +150,9 @@ def atualizar_personagem(id):
         "descricao_personagem": dados["descricao_personagem"],
         "biografia_personagem": dados["biografia_personagem"],
     }), 200
+    """
+
+    item = buscar_por_id(id)
+    if item:
+        item["atributo"] = atributo
+    return item
