@@ -1,0 +1,583 @@
+:root {
+    --verde-neon: #00FE00;
+    --vermelho-virus: #B61606;
+    --roxo-pesquisa: #292360;
+    --azul-bebe: #AAC6DF;
+    --azul-carta: #4464A5;
+    --azul-claro: #9ED0F3;
+    --verde-musgo: #7B9836;
+    --preto: #1E1B1F;
+    --roxo-escuro: #7f20c5;
+    --cinza-claro: #b9b9b9;
+    --branco: #ffffff;
+    --cinza-escuro: #8f8f8f;
+    --verde-brasil: #009C3B;
+    --amarelo-brasil: #FFDF00;
+}
+
+.brindes-pagina {
+    background: #f5f5f5;
+    color: var(--preto);
+}
+
+.brindes-hero {
+    min-height: 570px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    overflow: hidden;
+    padding: 70px max(7%, 30px);
+    background: linear-gradient(120deg, var(--preto), var(--roxo-pesquisa), var(--azul-carta));
+}
+
+.hero-conteudo {
+    position: relative;
+    z-index: 5;
+}
+
+.hero-tag {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 8px 13px;
+    border: 1px solid var(--verde-neon);
+    color: var(--verde-neon);
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.hero-conteudo h1 {
+    margin: 0;
+    color: var(--branco);
+    font-size: clamp(42px, 6vw, 76px);
+    font-weight: 900;
+    line-height: .95;
+}
+
+.hero-conteudo h1 strong {
+    color: var(--amarelo-brasil);
+}
+
+.hero-conteudo p {
+    max-width: 480px;
+    margin: 25px 0;
+    color: var(--azul-claro);
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.btn-brinde {
+    display: inline-block;
+    padding: 15px 25px;
+    background: var(--verde-neon);
+    color: var(--preto);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.hero-arte {
+    position: relative;
+    height: 430px;
+}
+
+.hero-circulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 360px;
+    height: 360px;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 50%;
+}
+
+.hero-card {
+    position: absolute;
+    width: 170px;
+    height: 235px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid var(--branco);
+    box-shadow: 0 20px 50px rgba(0,0,0,.35);
+    text-align: center;
+}
+
+.hero-card span {
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.hero-card strong {
+    margin-top: 10px;
+    font-size: 28px;
+}
+
+.hero-card-1 {
+    top: 80px;
+    left: 15%;
+    z-index: 2;
+    transform: rotate(-13deg);
+    background: var(--verde-brasil);
+    color: var(--branco);
+}
+
+.hero-card-2 {
+    top: 40px;
+    right: 18%;
+    z-index: 3;
+    transform: rotate(10deg);
+    background: var(--amarelo-brasil);
+    color: var(--preto);
+}
+
+.hero-card-3 {
+    bottom: 15px;
+    left: 40%;
+    z-index: 4;
+    transform: rotate(-2deg);
+    background: var(--roxo-escuro);
+    color: var(--branco);
+}
+
+.resgate-section,
+.recompensas-section,
+.como-funciona {
+    padding: 75px max(8%, 25px);
+}
+
+.resgate-section {
+    background: var(--branco);
+}
+
+.resgate-cabecalho {
+    max-width: 750px;
+    margin-bottom: 35px;
+}
+
+.resgate-cabecalho > span,
+.secao-titulo > div > span,
+.centralizado > span {
+    color: var(--azul-carta);
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.resgate-cabecalho h2,
+.secao-titulo h2 {
+    margin: 8px 0;
+    color: var(--preto);
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.resgate-cabecalho p {
+    margin: 0;
+    color: var(--cinza-escuro);
+}
+
+.resgate-box {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    max-width: 950px;
+    padding: 30px;
+    background: var(--preto);
+    border-left: 6px solid var(--verde-neon);
+}
+
+.codigo-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: var(--verde-neon);
+    color: var(--preto);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.codigo-conteudo {
+    width: 100%;
+}
+
+.codigo-conteudo label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--azul-claro);
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.codigo-input {
+    display: flex;
+    gap: 10px;
+}
+
+.codigo-input input {
+    width: 100%;
+    height: 52px;
+    padding: 0 18px;
+    outline: none;
+    border: 1px solid #555;
+    background: #28262a;
+    color: var(--branco);
+    font-weight: 700;
+}
+
+.codigo-input button {
+    width: 150px;
+    border: 0;
+    background: var(--verde-neon);
+    color: var(--preto);
+    font-weight: 900;
+}
+
+.mensagem-resgate {
+    min-height: 20px;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.recompensas-section {
+    background: #eeeeee;
+}
+
+.secao-titulo {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.contador-brindes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background: var(--branco);
+    border: 1px solid var(--cinza-claro);
+}
+
+.contador-brindes strong {
+    color: var(--roxo-escuro);
+    font-size: 25px;
+}
+
+.contador-brindes span {
+    color: var(--cinza-escuro);
+    font-size: 8px;
+    font-weight: 900;
+}
+
+.brindes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.brinde-card {
+    overflow: hidden;
+    background: var(--branco);
+    border: 1px solid var(--cinza-claro);
+    transition: .25s;
+}
+
+.brinde-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(30,27,31,.12);
+}
+
+.brinde-card.destaque {
+    border-top: 5px solid var(--amarelo-brasil);
+}
+
+.brinde-imagem {
+    position: relative;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--roxo-pesquisa);
+}
+
+.brinde-azul {
+    background: var(--azul-carta);
+}
+
+.brinde-verde {
+    background: var(--verde-musgo);
+}
+
+.brinde-roxo {
+    background: var(--roxo-escuro);
+}
+
+.brinde-camiseta {
+    background: #222;
+}
+
+.brinde-imagem img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .35s ease;
+}
+
+.brinde-card:hover .brinde-imagem img {
+    transform: scale(1.06);
+}
+
+.brinde-selo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    padding: 6px 8px;
+    background: var(--amarelo-brasil);
+    color: var(--preto);
+    font-size: 7px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.brinde-info {
+    padding: 22px;
+}
+
+.brinde-info > span {
+    color: var(--cinza-escuro);
+    font-size: 8px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.brinde-info h3 {
+    margin: 7px 0;
+    color: var(--preto);
+    font-size: 21px;
+    font-weight: 900;
+}
+
+.brinde-info p {
+    min-height: 65px;
+    margin: 0 0 18px;
+    color: var(--cinza-escuro);
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.btn-ver-brinde {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid var(--azul-carta);
+    background: var(--branco);
+    color: var(--azul-carta);
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.btn-ver-brinde:hover {
+    background: var(--azul-carta);
+    color: var(--branco);
+}
+
+.como-funciona {
+    background: var(--branco);
+}
+
+.centralizado {
+    display: block;
+    text-align: center;
+}
+
+.passos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.passo {
+    padding: 30px;
+    background: #f4f4f4;
+    border: 1px solid var(--cinza-claro);
+}
+
+.passo-numero {
+    margin-bottom: 25px;
+    color: var(--azul-carta);
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.passo h3 {
+    font-size: 19px;
+    font-weight: 900;
+}
+
+.passo p {
+    margin: 0;
+    color: var(--cinza-escuro);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.aviso-brindes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0 max(8%, 25px) 70px;
+    padding: 22px;
+    background: #eeeeee;
+    border-left: 5px solid var(--amarelo-brasil);
+}
+
+.aviso-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--amarelo-brasil);
+    color: var(--preto);
+    font-weight: 900;
+}
+
+.aviso-brindes p {
+    margin: 4px 0 0;
+    color: var(--cinza-escuro);
+    font-size: 12px;
+}
+
+.modal-brinde {
+    overflow: hidden;
+    border: 0;
+    border-radius: 5px;
+}
+
+.modal-header {
+    border: 0;
+    background: var(--preto);
+}
+
+.modal-header span {
+    color: var(--verde-neon);
+    font-size: 9px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+.modal-body {
+    padding: 30px;
+    text-align: center;
+}
+
+.modal-imagem {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin: 0 auto 25px;
+    border: 6px solid var(--cinza-claro);
+    display: block;
+}
+
+.camiseta-modal {
+    object-fit: contain;
+    background: #eee;
+}
+
+.modal-body h3 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.modal-body p {
+    color: var(--cinza-escuro);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+@media (max-width: 1000px) {
+    .brindes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .brindes-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-arte {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    .brindes-hero {
+        padding: 55px 20px;
+    }
+
+    .hero-arte {
+        height: 330px;
+    }
+
+    .hero-circulo {
+        width: 270px;
+        height: 270px;
+    }
+
+    .hero-card {
+        width: 120px;
+        height: 170px;
+    }
+
+    .brindes-grid,
+    .passos {
+        grid-template-columns: 1fr;
+    }
+
+    .resgate-box {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .codigo-icon {
+        margin: 0 auto;
+    }
+
+    .codigo-input {
+        flex-direction: column;
+    }
+
+    .codigo-input button {
+        width: 100%;
+        height: 50px;
+    }
+
+    .secao-titulo {
+        align-items: start;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .aviso-brindes {
+        align-items: start;
+    }
+}
