@@ -4,6 +4,7 @@ from modelo_route import modelo_bp
 from personagens_route import personagens_bp 
 from cartas_route import cartas_bp
 
+
 app = Flask(__name__)
 CORS(app)
 
