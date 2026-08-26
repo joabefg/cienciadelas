@@ -1,0 +1,578 @@
+:root {
+    --verde-neon: #00FE00;
+    --vermelho-virus: #B61606;
+    --roxo-pesquisa: #292360;
+    --azul-bebe: #AAC6DF;
+    --azul-carta: #4464A5;
+    --azul-claro: #9ED0F3;
+    --verde-musgo: #7B9836;
+    --preto: #1E1B1F;
+    --roxo-escuro: #7f20c5;
+    --cinza-claro: #b9b9b9;
+    --branco: #ffffff;
+    --cinza-escuro: #8f8f8f;
+    --verde-brasil: #009C3B;
+    --amarelo-brasil: #FFDF00;
+    --azul-brasil: #010b83;
+    --vermelho-polonia: #DE0000;
+    --cinza-mesa: #65665F;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4f4f4;
+    color: var(--preto);
+}
+
+.cartas-pagina {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 50px 20px 80px;
+}
+
+.cartas-introducao {
+    margin-bottom: 35px;
+}
+
+.cartas-introducao > span {
+    display: inline-block;
+    padding: 7px 12px;
+    border: 1px solid var(--azul-carta);
+    color: var(--azul-carta);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.cartas-introducao h1 {
+    margin: 12px 0 8px;
+    color: var(--preto);
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.cartas-introducao p {
+    max-width: 700px;
+    margin: 0;
+    color: var(--cinza-escuro);
+    font-size: 15px;
+}
+
+.cartas-accordion {
+    --bs-accordion-border-color: transparent;
+    --bs-accordion-border-width: 0;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-btn-icon-width: 18px;
+}
+
+.personagem-item {
+    margin-bottom: 18px;
+    overflow: hidden;
+    border: 1px solid var(--cinza-claro) !important;
+    border-radius: 8px !important;
+    background: var(--branco);
+    box-shadow: 0 5px 18px rgba(30, 27, 31, 0.08);
+}
+
+.personagem-botao {
+    min-height: 85px;
+    padding: 18px 25px !important;
+    background: var(--branco) !important;
+    color: var(--preto) !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.personagem-botao:not(.collapsed) {
+    background: var(--azul-carta) !important;
+    color: var(--branco) !important;
+}
+
+.personagem-botao::after {
+    filter: none;
+}
+
+.personagem-botao:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}
+
+.personagem-nome {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+.personagem-tipo {
+    margin-bottom: 4px;
+    color: var(--cinza-escuro);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.personagem-botao:not(.collapsed) .personagem-tipo {
+    color: var(--azul-claro);
+}
+
+.personagem-nome strong {
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.personagem-descricao {
+    margin-left: 30px;
+    color: var(--cinza-escuro);
+    font-size: 13px;
+}
+
+.personagem-botao:not(.collapsed) .personagem-descricao {
+    color: var(--branco);
+}
+
+.personagem-cartas {
+    padding: 30px;
+    background: #eeeeee;
+}
+
+.cartas-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.cartas-cabecalho > div:first-child span {
+    color: var(--cinza-escuro);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.cartas-cabecalho h3 {
+    margin: 4px 0 0;
+    color: var(--preto);
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.contador-cartas {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: var(--branco);
+    border: 1px solid var(--cinza-claro);
+    border-radius: 5px;
+}
+
+.contador-cartas strong {
+    color: var(--azul-carta);
+    font-size: 20px;
+}
+
+.contador-cartas span {
+    color: var(--cinza-escuro);
+    font-size: 8px;
+    font-weight: 800;
+}
+
+.cartas-personagem {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.carta-item {
+    overflow: hidden;
+    border: 1px solid var(--cinza-claro) !important;
+    border-radius: 7px !important;
+    background: var(--branco);
+}
+
+.carta-comum {
+    border-left: 5px solid var(--azul-carta) !important;
+}
+
+.carta-especial {
+    border-left: 5px solid var(--roxo-escuro) !important;
+}
+
+.carta-botao {
+    display: flex !important;
+    align-items: center;
+    min-height: 110px;
+    padding: 12px !important;
+    background: var(--branco) !important;
+    color: var(--preto) !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.carta-botao:not(.collapsed) {
+    background: #fafafa !important;
+}
+
+.carta-botao::after {
+    margin-left: 15px;
+}
+
+.mini-carta-arte {
+    width: 105px;
+    height: 82px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.mini-carta-arte span {
+    margin-bottom: 5px;
+    font-size: 7px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.mini-carta-arte strong {
+    font-size: 13px;
+    line-height: 1.1;
+}
+
+.arte-marie {
+    background: var(--cinza-mesa);
+    color: var(--branco);
+}
+
+.arte-jaqueline {
+    background: linear-gradient(
+        135deg,
+        var(--verde-brasil) 0%,
+        var(--verde-brasil) 33%,
+        var(--amarelo-brasil) 33%,
+        var(--amarelo-brasil) 66%,
+        var(--azul-brasil) 66%,
+        var(--azul-brasil) 100%
+    );
+    color: var(--branco);
+    text-shadow: 0 1px 3px #000;
+}
+
+.arte-radioatividade {
+    background: var(--verde-musgo);
+    color: var(--branco);
+}
+
+.arte-sequenciamento {
+    background: var(--azul-brasil);
+    color: var(--branco);
+}
+
+.carta-resumo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.carta-resumo span {
+    color: var(--cinza-escuro);
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.carta-resumo strong {
+    margin: 4px 0;
+    color: var(--preto);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.carta-resumo small {
+    color: var(--cinza-escuro);
+    font-size: 11px;
+}
+
+.carta-custo {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    background: var(--amarelo-brasil);
+    color: var(--preto);
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.carta-detalhes {
+    padding: 25px 30px;
+    background: #e7e7e7;
+    border-top: 1px solid var(--cinza-claro);
+}
+
+.carta-detalhes-titulo span {
+    color: var(--cinza-escuro);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.carta-detalhes-titulo h4 {
+    margin: 5px 0 12px;
+    color: var(--preto);
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.carta-detalhes > p {
+    max-width: 800px;
+    margin: 0 0 20px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.informacoes-carta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.informacoes-carta > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 13px;
+    background: var(--branco);
+    border: 1px solid #d2d2d2;
+    border-radius: 4px;
+}
+
+.informacoes-carta span {
+    color: var(--cinza-escuro);
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.informacoes-carta strong {
+    color: var(--verde-brasil);
+    font-size: 13px;
+}
+
+.informacoes-carta strong.negativo {
+    color: var(--vermelho-virus);
+}
+
+.ameaca-item {
+    border-color: var(--vermelho-virus) !important;
+}
+
+.ameaca-item .personagem-botao:not(.collapsed) {
+    background: var(--vermelho-virus) !important;
+}
+
+.ameaca-item .personagem-botao:not(.collapsed) .personagem-tipo {
+    color: var(--amarelo-brasil);
+}
+
+.virus-area {
+    padding: 30px;
+    background: var(--preto);
+}
+
+.virus-card {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    overflow: hidden;
+    background: var(--branco);
+    border-radius: 7px;
+}
+
+.virus-arte {
+    position: relative;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--vermelho-virus);
+}
+
+.virus-arte strong {
+    position: relative;
+    z-index: 5;
+    padding: 15px 20px;
+    border: 2px solid var(--branco);
+    color: var(--branco);
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.virus-nucleo {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background: var(--vermelho-virus);
+    border: 4px solid #ff7165;
+    box-shadow:
+        0 0 0 20px rgba(255,255,255,.08),
+        0 0 0 40px rgba(255,255,255,.04);
+}
+
+.virus-particula {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ff7165;
+    border: 4px solid var(--branco);
+}
+
+.virus-p1 {
+    top: 20%;
+    left: 22%;
+}
+
+.virus-p2 {
+    top: 25%;
+    right: 20%;
+}
+
+.virus-p3 {
+    bottom: 20%;
+    left: 20%;
+}
+
+.virus-p4 {
+    bottom: 15%;
+    right: 25%;
+}
+
+.virus-info {
+    padding: 35px;
+}
+
+.virus-info > span {
+    color: var(--vermelho-virus);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.virus-info h3 {
+    margin: 5px 0 0;
+    color: var(--preto);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.virus-info h4 {
+    margin: 0 0 15px;
+    color: var(--vermelho-virus);
+    font-size: 16px;
+}
+
+.virus-info p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.virus-status {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.virus-status div {
+    padding: 12px;
+    background: #eeeeee;
+    border: 1px solid #dddddd;
+}
+
+.virus-status span {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--cinza-escuro);
+    font-size: 8px;
+    font-weight: 800;
+}
+
+.virus-status strong {
+    color: var(--preto);
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+
+    .cartas-pagina {
+        padding: 35px 12px 60px;
+    }
+
+    .cartas-introducao h1 {
+        font-size: 31px;
+    }
+
+    .personagem-nome {
+        min-width: auto;
+    }
+
+    .personagem-descricao {
+        display: none;
+    }
+
+    .personagem-cartas {
+        padding: 20px;
+    }
+
+    .cartas-cabecalho {
+        gap: 15px;
+    }
+
+    .carta-botao {
+        min-height: 90px;
+    }
+
+    .mini-carta-arte {
+        width: 75px;
+        height: 65px;
+    }
+
+    .carta-resumo {
+        margin-left: 10px;
+    }
+
+    .carta-resumo strong {
+        font-size: 14px;
+    }
+
+    .informacoes-carta {
+        grid-template-columns: 1fr;
+    }
+
+    .virus-card {
+        grid-template-columns: 1fr;
+    }
+
+    .virus-arte {
+        min-height: 240px;
+    }
+
+    .virus-status {
+        grid-template-columns: 1fr;
+    }
+}

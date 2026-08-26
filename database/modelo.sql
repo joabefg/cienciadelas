@@ -1,9 +1,4 @@
--- ============================================
--- ENTIDADE: Modelo
--- Responsável (Banco): Joab
--- Responsável (Back): Joab
--- Última atualização: 09/08/2026
--- ============================================
+
 
 USE cienciadelas;
 

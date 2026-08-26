@@ -40,13 +40,678 @@
                <a href="#"><span>WISHLIST</span></a>
           </div>
 
-     </main>
+        <section class="cartas-introducao">
+            <span>SISTEMA DE CARTAS</span>
 
-     <div id="footer-placeholder"></div>
+            <h1>Cartas dos Personagens</h1>
 
-     <script src="include.js"></script>
-     <!-- Bootstrap JS (bundle inclui Popper) -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <p>
+                Clique em um personagem para visualizar suas cartas.
+                Clique em uma carta para visualizar suas informações,
+                efeitos e custo de conhecimento.
+            </p>
+        </section>
+
+        <div class="accordion cartas-accordion" id="accordionPersonagens">
+
+            <div class="accordion-item personagem-item">
+
+                <h2 class="accordion-header" id="headingMarie">
+
+                    <button
+                        class="accordion-button collapsed personagem-botao"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseMarie"
+                        aria-expanded="false"
+                        aria-controls="collapseMarie"
+                    >
+
+                        <span class="personagem-nome">
+                            <span class="personagem-tipo">
+                                PESQUISADORA
+                            </span>
+
+                            <strong>Marie Curie</strong>
+                        </span>
+
+                        <span class="personagem-descricao">
+                            Cientista e especialista em radioatividade
+                        </span>
+
+                    </button>
+
+                </h2>
+
+                <div
+                    id="collapseMarie"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingMarie"
+                    data-bs-parent="#accordionPersonagens"
+                >
+
+                    <div class="personagem-cartas">
+
+                        <div class="cartas-cabecalho">
+
+                            <div>
+                                <span>CARTAS DISPONÍVEIS</span>
+                                <h3>Marie Curie</h3>
+                            </div>
+
+                            <div class="contador-cartas">
+                                <strong>02</strong>
+                                <span>CARTAS</span>
+                            </div>
+
+                        </div>
+
+                        <div class="accordion cartas-personagem" id="accordionMarie">
+
+                            <div class="accordion-item carta-item carta-comum">
+
+                                <h2 class="accordion-header" id="headingMarieComum">
+
+                                    <button
+                                        class="accordion-button collapsed carta-botao"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseMarieComum"
+                                        aria-expanded="false"
+                                        aria-controls="collapseMarieComum"
+                                    >
+
+                                        <div class="mini-carta-arte arte-marie">
+                                            <span>COMUM</span>
+                                            <strong>MARIE<br>CURE</strong>
+                                        </div>
+
+                                        <div class="carta-resumo">
+
+                                            <span>MARIE CURIE</span>
+
+                                            <strong>
+                                                Análise Radioativa
+                                            </strong>
+
+                                            <small>
+                                                Carta Comum
+                                            </small>
+
+                                        </div>
+
+                                        <div class="carta-custo">
+                                            1
+                                        </div>
+
+                                    </button>
+
+                                </h2>
+
+                                <div
+                                    id="collapseMarieComum"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingMarieComum"
+                                    data-bs-parent="#accordionMarie"
+                                >
+
+                                    <div class="carta-detalhes">
+
+                                        <div class="carta-detalhes-titulo">
+
+                                            <span>CARTA COMUM</span>
+
+                                            <h4>
+                                                Análise Radioativa
+                                            </h4>
+
+                                        </div>
+
+                                        <p>
+                                            Utiliza estudos sobre radioatividade
+                                            para aumentar a Pesquisa em +2.
+                                        </p>
+
+                                        <div class="informacoes-carta">
+
+                                            <div>
+                                                <span>EFEITO</span>
+                                                <strong>
+                                                    Pesquisa +2
+                                                </strong>
+                                            </div>
+
+                                            <div>
+                                                <span>CUSTO DE CONHECIMENTO</span>
+                                                <strong>
+                                                    1
+                                                </strong>
+                                            </div>
+
+                                            <div>
+                                                <span>TIPO</span>
+                                                <strong>
+                                                    Comum
+                                                </strong>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="accordion-item carta-item carta-especial">
+
+                                <h2 class="accordion-header" id="headingMarieEspecial">
+
+                                    <button
+                                        class="accordion-button collapsed carta-botao"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseMarieEspecial"
+                                        aria-expanded="false"
+                                        aria-controls="collapseMarieEspecial"
+                                    >
+
+                                        <div class="mini-carta-arte arte-radioatividade">
+                                            <span>ESPECIAL</span>
+                                            <strong>RADIO<br>ATIVIDADE</strong>
+                                        </div>
+
+                                        <div class="carta-resumo">
+
+                                            <span>MARIE CURIE</span>
+
+                                            <strong>
+                                                Radioatividade
+                                            </strong>
+
+                                            <small>
+                                                Carta Especial
+                                            </small>
+
+                                        </div>
+
+                                        <div class="carta-custo">
+                                            2
+                                        </div>
+
+                                    </button>
+
+                                </h2>
+
+                                <div
+                                    id="collapseMarieEspecial"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingMarieEspecial"
+                                    data-bs-parent="#accordionMarie"
+                                >
+
+                                    <div class="carta-detalhes">
+
+                                        <div class="carta-detalhes-titulo">
+
+                                            <span>CARTA ESPECIAL</span>
+
+                                            <h4>
+                                                Radioatividade
+                                            </h4>
+
+                                        </div>
+
+                                        <p>
+                                            Utiliza a radioatividade para
+                                            enfraquecer a ameaça, deixando-a
+                                            incapaz de aplicar seus efeitos
+                                            durante os próximos 2 turnos.
+                                            A Saúde é reduzida em -1.
+                                        </p>
+
+                                        <div class="informacoes-carta">
+
+                                            <div>
+                                                <span>EFEITO</span>
+                                                <strong>
+                                                    Ameaça incapacitada por 2 turnos
+                                                </strong>
+                                            </div>
+
+                                            <div>
+                                                <span>CUSTO DE CONHECIMENTO</span>
+                                                <strong>
+                                                    2
+                                                </strong>
+                                            </div>
+
+                                            <div>
+                                                <span>SAÚDE</span>
+                                                <strong class="negativo">
+                                                    -1
+                                                </strong>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="accordion-item personagem-item">
+
+                <h2 class="accordion-header" id="headingJaqueline">
+
+                    <button
+                        class="accordion-button collapsed personagem-botao"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseJaqueline"
+                        aria-expanded="false"
+                        aria-controls="collapseJaqueline"
+                    >
+
+                        <span class="personagem-nome">
+
+                            <span class="personagem-tipo">
+                                PESQUISADORA
+                            </span>
+
+                            <strong>
+                                Jaqueline Goes de Jesus
+                            </strong>
+
+                        </span>
+
+                        <span class="personagem-descricao">
+                            Cientista e pesquisadora genética
+                        </span>
+
+                    </button>
+
+                </h2>
+
+                <div
+                    id="collapseJaqueline"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingJaqueline"
+                    data-bs-parent="#accordionPersonagens"
+                >
+
+                    <div class="personagem-cartas">
+
+                        <div class="cartas-cabecalho">
+
+                            <div>
+                                <span>CARTAS DISPONÍVEIS</span>
+                                <h3>Jaqueline Goes de Jesus</h3>
+                            </div>
+
+                            <div class="contador-cartas">
+                                <strong>02</strong>
+                                <span>CARTAS</span>
+                            </div>
+
+                        </div>
+
+                        <div class="accordion cartas-personagem" id="accordionJaqueline">
+
+                            <div class="accordion-item carta-item carta-comum">
+
+                                <h2
+                                    class="accordion-header"
+                                    id="headingJaquelineComum"
+                                >
+
+                                    <button
+                                        class="accordion-button collapsed carta-botao"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseJaquelineComum"
+                                        aria-expanded="false"
+                                        aria-controls="collapseJaquelineComum"
+                                    >
+
+                                        <div class="mini-carta-arte arte-jaqueline">
+                                            <span>COMUM</span>
+                                            <strong>GENÉTICA</strong>
+                                        </div>
+
+                                        <div class="carta-resumo">
+
+                                            <span>
+                                                JAQUELINE GOES
+                                            </span>
+
+                                            <strong>
+                                                Análise Genética
+                                            </strong>
+
+                                            <small>
+                                                Carta Comum
+                                            </small>
+
+                                        </div>
+
+                                        <div class="carta-custo">
+                                            1
+                                        </div>
+
+                                    </button>
+
+                                </h2>
+
+                                <div
+                                    id="collapseJaquelineComum"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingJaquelineComum"
+                                    data-bs-parent="#accordionJaqueline"
+                                >
+
+                                    <div class="carta-detalhes">
+
+                                        <div class="carta-detalhes-titulo">
+
+                                            <span>CARTA COMUM</span>
+
+                                            <h4>
+                                                Análise Genética
+                                            </h4>
+
+                                        </div>
+
+                                        <p>
+                                            Analisa o material genético do
+                                            vírus para ampliar o conhecimento
+                                            científico, aumentando a Pesquisa
+                                            em +1 e reduzindo a Infraestrutura
+                                            em -1 devido ao uso intensivo
+                                            dos laboratórios.
+                                        </p>
+
+                                        <div class="informacoes-carta">
+
+                                            <div>
+                                                <span>EFEITO</span>
+                                                <strong>
+                                                    Pesquisa +1
+                                                </strong>
+                                            </div>
+
+                                            <div>
+                                                <span>INFRAESTRUTURA</span>
+                                                <strong class="negativo">
+                                                    -1
+                                                </strong>
+                                            </div>
+
+                                            <div>
+                                                <span>CUSTO</span>
+                                                <strong>
+                                                    1
+                                                </strong>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="accordion-item carta-item carta-especial">
+
+                                <h2
+                                    class="accordion-header"
+                                    id="headingJaquelineEspecial"
+                                >
+
+                                    <button
+                                        class="accordion-button collapsed carta-botao"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseJaquelineEspecial"
+                                        aria-expanded="false"
+                                        aria-controls="collapseJaquelineEspecial"
+                                    >
+
+                                        <div class="mini-carta-arte arte-sequenciamento">
+                                            <span>ESPECIAL</span>
+                                            <strong>DNA</strong>
+                                        </div>
+
+                                        <div class="carta-resumo">
+
+                                            <span>
+                                                JAQUELINE GOES
+                                            </span>
+
+                                            <strong>
+                                                Sequenciamento Genético
+                                            </strong>
+
+                                            <small>
+                                                Carta Especial
+                                            </small>
+
+                                        </div>
+
+                                        <div class="carta-custo">
+                                            3
+                                        </div>
+
+                                    </button>
+
+                                </h2>
+
+                                <div
+                                    id="collapseJaquelineEspecial"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingJaquelineEspecial"
+                                    data-bs-parent="#accordionJaqueline"
+                                >
+
+                                    <div class="carta-detalhes">
+
+                                        <div class="carta-detalhes-titulo">
+
+                                            <span>CARTA ESPECIAL</span>
+
+                                            <h4>
+                                                Sequenciamento Genético
+                                            </h4>
+
+                                        </div>
+
+                                        <p>
+                                            Realiza o sequenciamento completo
+                                            do material genético da ameaça.
+                                            A carta da Ameaça revelada tem
+                                            seus efeitos anulados durante
+                                            esta rodada.
+                                        </p>
+
+                                        <div class="informacoes-carta">
+
+                                            <div>
+                                                <span>EFEITO</span>
+                                                <strong>
+                                                    Efeitos da ameaça anulados
+                                                </strong>
+                                            </div>
+
+                                            <div>
+                                                <span>CUSTO DE CONHECIMENTO</span>
+                                                <strong>
+                                                    3
+                                                </strong>
+                                            </div>
+
+                                            <div>
+                                                <span>TIPO</span>
+                                                <strong>
+                                                    Especial
+                                                </strong>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="accordion-item personagem-item ameaca-item">
+
+                <h2 class="accordion-header" id="headingVirus">
+
+                    <button
+                        class="accordion-button collapsed personagem-botao"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseVirus"
+                        aria-expanded="false"
+                        aria-controls="collapseVirus"
+                    >
+
+                        <span class="personagem-nome">
+
+                            <span class="personagem-tipo">
+                                AMEAÇA
+                            </span>
+
+                            <strong>
+                                Vírus
+                            </strong>
+
+                        </span>
+
+                        <span class="personagem-descricao">
+                            COVID-19 — Ameaça viral
+                        </span>
+
+                    </button>
+
+                </h2>
+
+                <div
+                    id="collapseVirus"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingVirus"
+                    data-bs-parent="#accordionPersonagens"
+                >
+
+                    <div class="virus-area">
+
+                        <div class="virus-card">
+
+                            <div class="virus-arte">
+
+                                <div class="virus-nucleo"></div>
+
+                                <div class="virus-particula virus-p1"></div>
+                                <div class="virus-particula virus-p2"></div>
+                                <div class="virus-particula virus-p3"></div>
+                                <div class="virus-particula virus-p4"></div>
+
+                                <strong>
+                                    COVID-19
+                                </strong>
+
+                            </div>
+
+                            <div class="virus-info">
+
+                                <span>AMEAÇA VIRAL</span>
+
+                                <h3>
+                                    Vírus
+                                </h3>
+
+                                <h4>
+                                    COVID-19
+                                </h4>
+
+                                <p>
+                                    Representa a ameaça principal do jogo.
+                                    O vírus provoca diferentes eventos
+                                    durante a partida e interfere nos
+                                    recursos de Saúde, Pesquisa e
+                                    Infraestrutura.
+                                </p>
+
+                                <div class="virus-status">
+
+                                    <div>
+                                        <span>TIPO</span>
+                                        <strong>
+                                            Ameaça
+                                        </strong>
+                                    </div>
+
+                                    <div>
+                                        <span>IDENTIFICAÇÃO</span>
+                                        <strong>
+                                            COVID-19
+                                        </strong>
+                                    </div>
+
+                                    <div>
+                                        <span>CARTAS EXTRAS</span>
+                                        <strong>
+                                            Nenhuma
+                                        </strong>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="include.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
 </body>
 
 </html>
