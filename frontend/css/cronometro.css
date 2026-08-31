@@ -1,0 +1,15 @@
+.cronometro {
+  font-family: 'Alagard', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-top: 1rem;
+  font-size: 7em;
+  font-weight: normal;
+  color: #000000;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  left: -200px;
+  white-space: pre-line;
+  line-height: 1.2;
+}
