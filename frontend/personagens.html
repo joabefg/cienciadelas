@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Personagens e Viloes Ciencia Delas</title>
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/personagens.css">
+     <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+
+     <div id="header-placeholder"></div>
+
+    <main class="container my-4">
+  <section class="hero-section">
+    <div class="row align-items-center">
+      <div class="col-12 mb-3">
+        <h1>Descubra um pouco mais sobre a nossa história</h1>
+      </div>
+      <div class="col-md-7"> <!-- Define onde sera a posição da imagem -->
+        <div class="hero-text">
+          <p>
+            Um laboratório isolado, um fenômeno inexplicável e uma corrida contra o tempo. 
+            Em <strong>Ciencia Delas</strong>, você e sua equipe de cientistas enfrentam o desconhecido para desvendar mistérios 
+            que a ciência convencional não consegue explicar.
+          </p>
+          <a href="modelo.html" class="btn-preto-pequeno"> <!-- Botao -->
+             Baixar JOGO
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+
+        <div class="card shadow-sm bd-image-container">
+          <imag id="img-personagem" src="" class="card-img-top img fluid" alt="Imagem do Personagem" style="display: none;"></imag>
+
+          <div id="img-loader" class="text-center p-4 text-muted">
+            Carregando imagem....
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </section>
+
+  <section class="carrossel-section my-5">
+
+  <div class="row">
+    <div class="col-12">
+      
+      <div id="carrosselPersonagens" class="carousel slide shadow rounded" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carrosselPersonagens" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carrosselPersonagens" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carrosselPersonagens" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner rounded">
+          
+          <div class="carousel-item active">
+            <div class="carrossel-img-box">
+              <img id="carrossel-img-1" src="SUA_IMAGEM_1.jpg" class="d-block w-100" alt="Personagem 1">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>MARIE CURIE</h5>
+              <p>Descrição vinda do banco de dados.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carrossel-img-box">
+              <img id="carrossel-img-2" src="SUA_IMAGEM_2.jpg" class="d-block w-100" alt="Personagem 2">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>JAQUELINE GOES DE JUSUS</h5>
+              <p>Outra descrição vinda do banco.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carrossel-img-box">
+              <img id="carrossel-img-3" src="SUA_IMAGEM_3.jpg" class="d-block w-100" alt="Personagem 3">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5> CORONAVIRUS - COVID 19</h5>
+              <p>Mais detalhes sobre o personagem.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrosselPersonagens" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrosselPersonagens" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+ 
+<div id="header-placeholder"></div>
+
+    <main class="container my-4">
+  <section class="hero-section">
+    <div class="row align-items-center">
+      <div class="col-12 mb-3">
+        <h1>Marie Curie. 1867-1934</h1>
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="card shadow-sm bd-image-container">
+          <imag id="img-personagem" src="" class="card-img-top img fluid" alt="Imagem do Personagem" style="display: none;"></imag>
+
+          <div id="img-loader" class="text-center p-4 text-muted">
+            Carregando imagem....
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6"> <!-- Define onde sera a posição da imagem -->
+        <div class="hero-text">
+          <p>
+            Marie Curie (1867-1934) foi uma cientista polonesa naturalizada francesa. 
+            Descobriu e isolou os elementos químicos: o polônio e o rádio, junto com Pierre Curie. 
+            Foi a primeira mulher a receber o Prêmio Nobel de Física, em 1903, e a única a acumular o prêmio duas vezes, quando recebeu o de Química, em 1911. 
+            Foi a primeira mulher a lecionar na Sorbonne.
+          </p>
+          <a href="home.html" class="btn-preto-pequeno"> <!-- Botao -->
+             CATALOGO DE CARTAS
+          </a>
+          <a href="home.html" class="btn-preto-pequeno"> <!-- Botao -->
+             CARTAS ESPECIAIS
+          </a>
+        </div>
+      </div>
+
+      <section class="galeria-grid my-4">
+  <div class="row g-3"> 
+    <div class="col-6 col-md-6">
+      <div class="quadro-imagem" >
+        <img id="img-banco-1" src="SUA_IMAGEM_1.jpg" alt="Marie Curie" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="col-6 col-md-6">
+      <div class="quadro-imagem">
+        <img id="img-banco-2" src="SUA_IMAGEM_2.jpg" alt="Marie Curie" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="col-6 col-md-6">
+      <div class="quadro-imagem">
+        <img id="img-banco-3" src="SUA_IMAGEM_3.jpg" alt="Marie Curie" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="col-6 col-md-6">
+      <div class="quadro-imagem">
+        <img id="img-banco-4" src="SUA_IMAGEM_4.jpg" alt="Marie Curie" class="img-fluid">
+      </div>
+    </div>
+
+  </div>
+</section>
+      <div class="col-5 mb-10">
+        <h1>Cartas Espeiais</h1>
+      </div>
+
+<section class="carousel-section">
+    <header class="section-header">
+      <p>Cartas Unicas da Marie Curie</p>
+    </header>
+
+    <div class="carousel-track">
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <h3>CARTAS ESPECIAIS</h3>
+            <span class="card-subtitle">Nome da Carta</span>
+          </div>
+        </div>
+        <p class="card-body">Descrição curta.</p>
+        <div class="card-image">
+          <img src="" alt="Ilustração">
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <h3>CARTAS ESPECIAIS</h3>
+            <span class="card-subtitle">Nome da Carta</span>
+          </div>
+        </div>
+        <p class="card-body">Descrição curta.</p>
+        <div class="card-image">
+          <img src="" alt="Ilustração">
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <h3>Cartas Especiais</h3>
+            <span class="card-subtitle">Nome da Carta</span>
+          </div>
+        </div>
+        <p class="card-body">Descrição curta.</p>
+        <div class="card-image">
+          <img src="" alt="Ilustração">
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <h3>CARTAS ESPECIAIS</h3>
+            <span class="card-subtitle">Nome da Carta</span>
+          </div>
+        </div>
+        <p class="card-body">Descrição curta.</p>
+        <div class="card-image">
+          <img src="" alt="Ilustração">
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <h3>Cartas Especiais</h3>
+            <span class="card-subtitle">Nome da Carta</span>
+          </div>
+        </div>
+        <p class="card-body">Descrição curta.</p>
+        <div class="card-image">
+          <img src="" alt="Ilustração">
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <h3>Cartas Especiais</h3>
+            <span class="card-subtitle">Nome da Carta</span>
+          </div>
+        </div>
+        <p class="card-body">Descrição curta.</p>
+        <div class="card-image">
+          <img src="" alt="Ilustração">
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+    <main class="container my-4">
+  <section class="hero-section">
+    <div class="row align-items-center">
+      <div class="col-12 mb-3">
+        <h1>Jaqueline Goes De Jusus.     1989</h1>
+      </div>
+
+      <div class="col-md-6"> <!-- Define onde sera a posição da imagem -->
+        <div class="hero-text">
+          <p>
+           Nascida na Bahia, área coberta pelo CRBM2, Jaqueline Goes de Jesus, 31 anos, é uma biomédica e pesquisadora. 
+           Ela distinguiu-se por ser uma entre muitas mulheres cientistas que fizeram parte da equipe responsável pela 
+           sequenciação do primeiro genoma do vírus SARS-CoV-2 apenas 48 horas após a confirmação do primeiro caso de COVID-19 no Brasil.
+          </p>
+
+          <p>
+          A baiana é graduada em biomedicina e doutora em patologia humana e experimental pela Universidade Federal da Bahia UFBA 
+          em associação com a Fiocruz. Em 2018, Jaqueline estava em Birmigham num estágio onde desenvolveu e aprimorou protocolos 
+          de sequenciamento de genomas completos pela tecnologia de nanoporos do vírus Zika, além de protocolos para sequenciamento direto do RNA que teve consequência em seu trabalho com o Sars-CoV-2.
+          </p>
+          <a href="home.html" class="btn-preto-pequeno"> <!-- Botao -->
+             CATALOGO DE CARTAS
+          </a>
+          <a href="home.html" class="btn-preto-pequeno"> <!-- Botao -->
+             CARTAS ESPECIAIS
+          </a>
+          
+        </div>
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="card shadow-sm bd-image-container">
+          <imag id="img-personagem" src="" class="card-img-top img fluid" alt="Imagem do Personagem" style="display: none;"></imag>
+
+          <div id="img-loader" class="text-center p-4 text-muted">
+            Carregando imagem....
+          </div>
+        </div>
+      </div>
+      
+
+<section class="galeria-grid my-4">
+  <div class="row g-3"> 
+    <div class="col-6 col-md-6">
+      <div class="quadro-imagem" >
+        <img id="img-banco-1" src="SUA_IMAGEM_1.jpg" alt="Jaqueline Goes de Jusus" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="col-6 col-md-6">
+      <div class="quadro-imagem">
+        <img id="img-banco-2" src="SUA_IMAGEM_2.jpg" alt="Jaqueline Goes de Jesus" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="col-6 col-md-6">
+      <div class="quadro-imagem">
+        <img id="img-banco-3" src="SUA_IMAGEM_3.jpg" alt="Jaqueline Goes de Jesus" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="col-6 col-md-6">
+      <div class="quadro-imagem">
+        <img id="img-banco-4" src="SUA_IMAGEM_4.jpg" alt="Jaqueline Goes de Jesus" class="img-fluid">
+      </div>
+    </div>
+
+  </div>
+</section>
+      <div class="col-5 mb-10">
+        <h1>Cartas Espeiais</h1>
+      </div>
+
+<section class="carousel-section">
+    <header class="section-header">
+      <p>Cartas Unicas da JAQUELINE GOES DE JESUS</p>
+    </header>
+
+    <div class="carousel-track">
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <h3>CARTAS ESPECIAIS</h3>
+            <span class="card-subtitle">Nome da Carta</span>
+          </div>
+        </div>
+        <p class="card-body">Descrição curta.</p>
+        <div class="card-image">
+          <img src="" alt="Ilustração">
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <h3>CARTAS ESPECIAIS</h3>
+            <span class="card-subtitle">Nome da Carta</span>
+          </div>
+        </div>
+        <p class="card-body">Descrição curta.</p>
+        <div class="card-image">
+          <img src="" alt="Ilustração">
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <h3>Cartas Especiais</h3>
+            <span class="card-subtitle">Nome da Carta</span>
+          </div>
+        </div>
+        <p class="card-body">Descrição curta.</p>
+        <div class="card-image">
+          <img src="" alt="Ilustração">
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <h3>CARTAS ESPECIAIS</h3>
+            <span class="card-subtitle">Nome da Carta</span>
+          </div>
+        </div>
+        <p class="card-body">Descrição curta.</p>
+        <div class="card-image">
+          <img src="" alt="Ilustração">
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <h3>Cartas Especiais</h3>
+            <span class="card-subtitle">Nome da Carta</span>
+          </div>
+        </div>
+        <p class="card-body">Descrição curta.</p>
+        <div class="card-image">
+          <img src="" alt="Ilustração">
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <h3>Cartas Especiais</h3>
+            <span class="card-subtitle">Nome da Carta</span>
+          </div>
+        </div>
+        <p class="card-body">Descrição curta.</p>
+        <div class="card-image">
+          <img src="" alt="Ilustração">
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+<div class="ratio ratio-6x6 mt-4"> <!--Define o espaço entre o video e a barra de movimento -->
+  <iframe src="" title="Vídeo"></iframe>
+</div>
+
+  <body>
+    <iframe width="943" height="409" src="https://www.youtube.com/embed/aycDoFJL00g" title="“O CAMINHO DO LOUCO” |  Rap (Lord of Mysteries) | Monarca do Beat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </body>
+
+  <p></p>
+  <p></p>  
+
+   <h1>
+    Viloes e Ameacas - COVID19</span>
+   </h1>
+      
+    </div>
+  </section>
+
+  <section class="carrossel-section my-5">
+
+  <div class="row">
+    <div class="col-12">
+      
+      <div id="carrosselPersonagens" class="carousel slide shadow rounded" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carrosselPersonagens" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carrosselPersonagens" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carrosselPersonagens" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner rounded">
+          
+          <div class="carousel-item active">
+            <div class="carrossel-img-box">
+              <img id="carrossel-img-1" src="SUA_IMAGEM_1.jpg" class="d-block w-100" alt="Personagem 1">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>AMEACA 001 - COVID19</h5>
+              <p>Descrição vinda do banco de dados.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carrossel-img-box">
+              <img id="carrossel-img-2" src="SUA_IMAGEM_2.jpg" class="d-block w-100" alt="Personagem 2">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>AMECA 002 </h5>
+              <p>Outra descrição vinda do banco.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carrossel-img-box">
+              <img id="carrossel-img-3" src="SUA_IMAGEM_3.jpg" class="d-block w-100" alt="Personagem 3">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5> AMEACA 003</h5>
+              <p>Mais detalhes sobre o personagem.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrosselPersonagens" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrosselPersonagens" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="col-md-12"> <!-- Define onde sera a posição da imagem -->
+        <div class="hero-text">
+          <p>
+             covid-19 é uma infecção respiratória aguda causada pelo coronavírus SARS-CoV-2, potencialmente grave, de elevada 
+             transmissibilidade e de distribuição global. O SARS-CoV-2 é um betacoronavírus descoberto em amostras de lavado 
+             broncoalveolar obtidas de pacientes com pneumonia de causa desconhecida na cidade de Wuhan, província de Hubei, 
+             China, em dezembro de 2019. Pertence ao subgênero Sarbecovírus da família Coronaviridae e é o sétimo coronavírus conhecido a infectar seres humanos.
+          </p>
+          <p>
+            O SARS-CoV-2 pertence à família Coronaviridae, subgênero Sarbecovírus, e é o sétimo coronavírus conhecido a infectar humanos.
+          </p>
+          <p>
+            A infecção pelo SARS-CoV-2 pode variar de casos sem sintomas e sintomas com manifestações leves, moderados, graves e críticos. 
+            Os sinais e sintomas mais comuns incluem: febre ou calafrios, tosse, fadiga, anorexia, dispneia, mialgia e dor de cabeça. 
+            No entanto, outros sintomas não específicos, como dor de garganta, congestão nasal ou coriza, e dor de cabeça, também foram reportados por casos confirmados de covid-19.
+          </p>
+
+          <a href="modelo.html" class="btn-preto-pequeno"> <!-- Botao -->
+             CATALOGO DE CARTAS
+          </a>
+          <a href="modelo.html" class="btn-preto-pequeno"> <!-- Botao -->
+             CARTAS ESPECIAIS
+          </a>
+          <br>
+          <br>
+          <br>
+
+          <div class="col-md-12">
+        <div class="card shadow-sm bd-image-container">
+          <imag id="img-personagem" src="" class="card-img-top img fluid" alt="Imagem " style="display: none;"></imag>
+          <div id="img-loader" class="text-center p-4 text-muted">
+            Carregando imagem....
+          </div>
+          <div class="card shadow-sm bd-image-container">
+          <imag id="img-personagem" src="" class="card-img-top img fluid" alt="Imagem " style="display: none;"></imag>
+          <div id="img-loader" class="text-center p-4 text-muted">
+            Carregando imagem....
+          </div>
+        </div>
+
+
+</main>
+     
+     <div id="footer-placeholder"></div>
+
+     <script src="include.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

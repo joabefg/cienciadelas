@@ -1,0 +1,161 @@
+.bd-image-container {
+  width: 100%;
+  height: 300px;           
+  overflow: hidden;        
+  background-color: #807a7a; 
+  border: 2px solid #faf7f7;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bd-image-container img {
+  width: 100%;
+  height: 1%;
+  object-fit: cover;      
+}
+
+.carrossel-img-box {
+  height: 400px;
+  background-color: #1a1a1a;
+}
+.carrossel-img-box img {
+  height: 100%;
+  object-fit: cover;
+}
+.btn-preto-pequeno {
+  background-color: #cf222200;
+  color: #020202;           
+  font-size: 13px;          
+  padding: 4px 10px;       
+  border-radius: 4px;       
+  text-decoration: none;     
+  display: inline-block;     
+  transition: background-color 0.2s;
+
+}
+.btn-preto-pequeno:hover {
+  background-color: #222222; 
+  color: #ffffff;
+}
+.quadro-imagem-Marie {
+  width: 100%;
+  height: 300px;
+  background-color: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 0px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quadro-imagem-Marie img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Container Geral */
+.carousel-section {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.section-header {
+  margin-bottom: 50px; /* distancia entre o carosel e a parte superior*/
+}
+
+.section-header h2 {
+  font-size: 1.8rem;
+  font-weight: 2000;
+  margin-bottom: 6px;
+}
+
+.section-header p {
+  color: #918f8f;
+  font-size: 0.95rem;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; 
+  scroll-behavior: smooth;
+  padding-bottom: 22px;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Estilização suave da barra de rolagem */
+.carousel-track::-webkit-scrollbar {
+  height: 10px;
+}
+
+.carousel-track::-webkit-scrollbar-thumb {
+  background: #242323;
+  border-radius: 6px;
+}
+
+/* O Cartas */
+.card {
+  flex: 0 0 300px;
+  scroll-snap-align: start; 
+  background-color: #cecece; 
+  border-radius: 16px;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Cabeçalho Interno do Card */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+/* define a fonte do carosel*/
+.card-header h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+
+.card-subtitle {
+  font-size: 0.65rem;
+  text-transform: uppercase; /* torna o texto maiusculo*/
+  color: #383838;
+}
+
+/* Texto de Descrição */
+.card-body {
+  font-size: 0.8rem;
+  line-height: 5.3;
+  color: #222;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Ilustração Inferior */
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.card-image img {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+conteudo-video {
+  width: 100%;
+  padding: 20px;
+}
