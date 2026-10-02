@@ -40,3 +40,5 @@ SELECT * FROM personagem ORDER BY criado_em DESC LIMIT 5;
 INSERT INTO personagem (nome_personagem, descricao_personagem, biografia_personagem, ano_nascimento, ano_falecimento) VALUES
     ('Marie Curie', 'Física e química pioneira na radioatividade', 'Marie Curie conduziu pesquisas pioneiras e foi a primeira mulher a ganhar um Prêmio Nobel.', 1867, 1934);
 
+
+JSON
