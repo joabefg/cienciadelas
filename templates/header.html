@@ -1,5 +1,5 @@
 <head>
-  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
 </head>
 <nav class="navbar navbar-expand-lg bg-transparent header-navbar">
      <div class="container">
@@ -9,9 +9,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navMenu">
                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="home.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('home_route') }}">Início</a></li>
                     <li class="nav-item"><a class="nav-link">|</a></li>
-                    <li class="nav-item"><a class="nav-link" href="modelo.html">Modelo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('modelo_route') }}">Modelo</a></li>
                     <li class="nav-item"><a class="nav-link">|</a></li>
                     <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
                </ul>

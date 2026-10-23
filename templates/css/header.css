@@ -1,0 +1,25 @@
+.header-navbar {
+  background-color: var(--cor-header-footer) !important;
+  color: var(--cor-texto-header);
+  font-family: var(--fonte-titulo);
+
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.header-navbar .nav-link,
+.navbar .navbar-brand {
+  color: var(--cor-texto-header) !important;
+}
+
+.nav-link {
+     background-color: var(--cor-primaria);
+     padding: 5px;
+     margin: 5px;
+}
+
+.header-navbar .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75) !important;
+}

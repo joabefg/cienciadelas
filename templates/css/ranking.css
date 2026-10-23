@@ -1,0 +1,150 @@
+/* Importando a Fonte Pixel Retrô do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.font-pixel, .backend-ranking-page {
+    font-family: 'Press Start 2P', cursive, sans-serif;
+}
+
+/* Customização dos textos baseados na escala pixel art */
+.backend-ranking-page h1.game-title {
+    font-size: 2.5rem;
+    color: #1d3557;
+    text-shadow: 3px 3px 0px #adadeb;
+}
+
+.banner-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.player-name, .player-stats, .table-header-labels {
+    font-size: 0.85rem;
+}
+
+/* Navbar Estilo Jogo */
+.game-navbar {
+    background-color: #5c7cb8;
+    border: 4px solid #000;
+}
+
+.game-brand {
+    font-size: 0.9rem;
+    color: #fff !important;
+    line-height: 1.4;
+}
+
+.btn-game-sm {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 0.6rem;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 6px 12px;
+    transition: all 0.2s;
+}
+
+.btn-game-sm:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #1a1a1a;
+}
+
+/* Caixa de Destaque / Hero Banner */
+.hero-banner-box {
+    background-color: #cccccc;
+    border: 4px solid #000;
+    box-shadow: 6px 6px 0px rgba(0,0,0,0.15);
+}
+
+/* Container do Ranking (Moldura Cinza com bordas arredondadas) */
+.ranking-card-container {
+    background-color: #e2e2e2;
+    border: 2px solid #999;
+    border-radius: 24px;
+    box-shadow: inset 2px 2px 0px #fff;
+}
+
+/* Linhas da Tabela de Ranking */
+.ranking-row {
+    background-color: #d1d1d1;
+    border-radius: 50px;
+    transition: transform 0.2s;
+}
+
+.ranking-row:hover {
+    transform: scale(1.01);
+    background-color: #c5c5c5;
+}
+
+/* Círculos com os Números de Posição */
+.badge-rank {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #4958a7, #6b439c);
+    color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow: 2px 2px 0px #000;
+}
+
+/* Cores customizadas para o pódio se quiser destacar */
+.rank-1 { background: linear-gradient(135deg, #513ba3, #43217c); }
+
+/* Ícones e Mascotes Placeholders */
+.item-icon {
+    font-size: 1.5rem;
+}
+
+.mascot-placeholder {
+    font-size: 5rem;
+    filter: drop-shadow(4px 4px 0px rgba(0,0,0,0.2));
+}
+
+/* Balão de Fala do Rodapé */
+.pixel-speech-bubble {
+    background-color: #4b6fa7;
+    color: white;
+    border: 3px solid #000;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    line-height: 1.6;
+    position: relative;
+    box-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+}
+
+/* Elemento Decorativo de Átomo Gigante */
+.pixel-atom-decor {
+    font-size: 6rem;
+    opacity: 0.15;
+    transform: rotate(15deg);
+}
+
+/* Rodapé do SENAI */
+.bg-blue-footer {
+    background-color: #5c7cb8;
+    font-size: 0.8rem;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+/* Ajustes de Responsividade para as fontes pequenas não quebrarem layout */
+@media (max-width: 768px) {
+    .header-buttons {
+        justify-content: center !important;
+        margin-top: 10px;
+    }
+    .player-name, .player-stats, .table-header-labels {
+        font-size: 0.55rem;
+    }
+    .banner-text {
+        font-size: 0.8rem;
+    }
+}

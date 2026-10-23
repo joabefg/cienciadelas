@@ -1,0 +1,87 @@
+:root {
+  --primary-blue: #6382c4;
+  --dark-text: #2c2c2c;
+  --bg-color: #ffffff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark-text);
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fontes com efeito pixelado retro */
+.logo-font,
+.pixel-title {
+  font-family: 'Silkscreen', cursive;
+  font-weight: 700;
+}
+
+.pixel-title {
+  color: #000;
+}
+
+/* Header & Footer */
+.header-bg,
+.footer-bg {
+  background-color: var(--primary-blue);
+}
+
+/* Botões do Menu */
+.btn-nav {
+  background-color: #4b6cae;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 4px 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-nav:hover {
+  background-color: #3b5893;
+  color: #ffffff;
+}
+
+/* Perguntas e Respostas */
+.faq-question {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.faq-divider {
+  border-top: 2px solid #888888;
+  opacity: 0.6;
+  margin-top: 2px;
+  margin-bottom: 12px;
+}
+
+.faq-answer {
+  color: #555555;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.faq-list {
+  color: #555555;
+  font-size: 0.95rem;
+  padding-left: 1.2rem;
+}
+
+.faq-list li {
+  margin-bottom: 4px;
+}
+
+/* Ícones do Rodapé */
+.social-icons a {
+  transition: opacity 0.2s;
+}
+
+.social-icons a:hover {
+  opacity: 0.8;
+}

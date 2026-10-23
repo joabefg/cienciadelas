@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from config import conectar
+
 from repositorios import modelo_repository as repo
 
 
