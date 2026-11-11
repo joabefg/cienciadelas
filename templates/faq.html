@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas Frequentes - Ciência Delas</title>
+</head>
+<body>
+
+    {% include 'header.html' %}
+
+    <main>
+        <h1>Perguntas Frequentes</h1>
+
+        <section>
+            {% for item in perguntas %}
+                <div>
+                    <h3>{{ item.pergunta }}</h3>
+                    <p>{{ item.resposta }}</p>
+                </div>
+            {% else %}
+                <p>Nenhuma pergunta cadastrada.</p>
+            {% endfor %}
+        </section>
+    </main>
+
+    {% include 'footer.html' %}
+
+</body>
+</html>
